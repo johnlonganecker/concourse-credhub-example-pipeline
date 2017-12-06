@@ -1,0 +1,16 @@
+---
+resources:
+- name: git-example
+  type: git
+  source:
+    uri: https://github.com/johnlonganecker/concourse-credhub-example-pipeline.git
+
+jobs:
+- name: hello-name
+  public: true
+  plan:
+  - get: git-example
+  - task: echo-hello-name
+    file: hello-task.yml
+    params:
+      name: ((name))
