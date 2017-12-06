@@ -5,5 +5,8 @@ image_resource:
   type: docker-image
   source: {repository: busybox}
 
+inputs:
+- name: git-example
+
 run:
   path: ./hello.sh

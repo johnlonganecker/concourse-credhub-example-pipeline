@@ -11,6 +11,6 @@ jobs:
   plan:
   - get: git-example
   - task: echo-hello-name
-    file: hello-task.yml
+    file: ./hello-task.yml
     params:
       name: ((name))
