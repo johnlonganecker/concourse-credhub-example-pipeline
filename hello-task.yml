@@ -9,4 +9,4 @@ inputs:
 - name: git-example
 
 run:
-  path: ./hello.sh
+  path: git-example/hello.sh
